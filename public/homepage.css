@@ -13,33 +13,34 @@ h2 {
     margin-right:auto;
     margin-top: 0px;
     margin-bottom: 0px;
-    width: 109px;
+    width: 7.98vw;
+    font-size: 2vw;
 }
 
 .sidebar {
     background-color: #333333;
-    width: 225px;
+    width: 16.472vw;
     height: 70%;
     padding-top:.1px;
-    padding-bottom: 225px;
+    padding-bottom: 16.472vw;
 }
 
 .profstrip {
-    margin-top:40px;
+    margin-top:2.929vw;
     background-color: #464646
     
 }
 
 p {
     margin: 0px 0px 0px 0px;
-    font-size:21px;
+    font-size:1.4vw;
     color:#f7f7f7;
 }
 
 /*Determines the position of text inside a div*/
 .tabs {
-    margin-top: 6.5px;
-    margin-left: 45px;
+    margin-top: .476vw;
+    margin-left: 3.295vw;
     position: absolute;
 }
 
@@ -63,9 +64,10 @@ p {
 /*Determines the position of an image in a div*/
 .sidebars {
     float: left;
-    padding: 0px 10px 0px 10px;
-    margin: 6.5px 0px 2.5px 0px;
+    padding: 0px .732vw 0px .732vw;
+    margin: .476vw 0px .2vw 0px;
     position: absolute;
+    width: 2vw;
 }
 /*For the link overlay in the side tab*/
 .links {
@@ -75,8 +77,8 @@ p {
 
 /*The size and attributes of the div for sidebar links*/
 .divsize {
-    height: 37px;
-    width: 225px;
+    height: 2.709vw;
+    width: 16.472vw;
     z-index: 1;
     position: relative;
 }
@@ -105,15 +107,15 @@ p {
 }
 
 .feed {
-    margin-top: 225px;
-    margin-left: 225px;
-    width: 525px;
+    margin-top: 16.472vw;
+    margin-left: 16.472vw;
+    width: 38.434vw;
     height: 70%;
     position: absolute;
 }
 
 .icon {
-    width: 21px;
+    width: 1.538vw;
     background-color: #ffffff;
     z-index: 1;
     position: relative;
@@ -130,14 +132,14 @@ p {
 .tweet_feed {
     height:auto;
     overflow:auto;
-    width: 505px;
+    width: 36.97vw;
     background-color:#FFF;
-    padding:10px;
-    margin-bottom:5px;
+    padding:.733vw;
+    margin-bottom:.366vw;
 }
 .tweet_feed p {
     color: #000000; 
-    font-size:14px;
+    font-size:1vw;
 }
 .insta_feed {
     height: auto;
@@ -152,14 +154,14 @@ p {
 }
 
 .nums {
-    margin-top: -85px;
-    margin-bottom: 20px;
+    margin-top: -6.223vw;
+    margin-bottom: 1.465vw;
     position: relative;
-    font-size: 25px;
+    font-size: 1.5vw;
 }
 
 .assets {
-    margin-top: -85px;
-    margin-bottom: 20px;
+    margin-top: -6.223vw;
+    margin-bottom: 1.465vw;
     position: relative;
 }
