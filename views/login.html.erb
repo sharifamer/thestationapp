@@ -1,0 +1,123 @@
+<html>
+
+    <head>
+
+    <title>TheStationApp</title>
+    <link href="login.css" rel="stylesheet" type="text/javascript">
+
+        <script type="text/javascript">
+
+        </script>
+
+    <title>Slideshow</title>
+    
+        <link href="login.css" rel="stylesheet" type="text/javascript">
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+        <script>
+        slideimages = new Array();
+                    var images = ["images/bikeguy.jpg", "images/lake.jpeg", "images/chef.jpg", "images/city.jpg", "images/cityscape.jpg", "images/home.jpg", "images/italy.jpg", "images/library.jpg", "images/map.jpg", "images/table.jpeg"];
+                    for (var i = 0; i < images.length; i++) {
+                           tempImage = new Image();
+                           tempImage.src = images[i];
+                           slideimages.push(tempImage);
+                    }
+        </script>
+    </head>
+    
+    
+    
+    
+
+    <body>
+
+        <div id="slider">
+            <img src="images/greenrain.jpg" id="slide" width="100" height="100" />
+        </div>
+
+            
+                                             <script type="text/javascript">
+                                                var step = 0;
+                                             
+                                                function slideit(){
+                                                 $("#slider").html(slideimages[ (step+1) % 9]);
+                                         
+                                        
+                                                 //this function uses "slideit()" every 8 seconds
+                                                 step = step + 1;
+                                                 setTimeout("slideit()",12000);
+                                                }
+                                        
+                                                slideit();
+                                            </script>
+                                            
+                                                
+                                            
+    
+    
+
+            <div style="width: 58vw; margin-left: auto; margin-right: auto;">
+                <div style="margin-top: 8vw; position: absolute; width: 57vw;">
+            <!--Left side-->
+                        <div style="position: absolute; width: 26.5vw;">
+                            <p class="socnet">
+                                Login with a social network
+                            </p>
+                            <div  class="buttons">
+                                <a href="">
+                                    <img src="images/FacebookLogin.png" class="buttons" style=" margin-top: 4.5vw;">
+                                </a>
+                            </div>
+                            <div  class="buttons">
+                                <a href="/twitterfeed">
+                                    <img src="images/TwitterLogin.png"  class="buttons" style=" margin-top: 6.35vw;">
+                                </a>
+                            </div>
+                            <div  class="buttons">
+                                <a href="">
+                                    <img src="images/GoogleLogin.png" class="buttons" style=" margin-top: 8.4vw;">
+                                </a>
+                            </div>
+                        </div>
+                    
+        
+                <!--right side-->
+                    <div style="margin-left: 30vw; margin-top: 3vw; position: absolute; color: #ffffff; width: 27vw;">
+                        <form method="POST" action="/signin" style="margin-bottom: 0vw;">
+                            <input type="text"  name="user" class="login" placeholder="Username"/>
+                            </br>
+                            <input type="password" name="pass" class="login" style=" margin-top: 2vw" placeholder="Password"/>
+                        </br>
+                                <div >
+                                    <input type="submit" value="LOG IN" style=" margin-top: 2vw;" class="loginbutton">
+                                </div>
+                            </form>
+                            <div>
+                                <a href="/lostinfo" style="margin-left: 2vw; font-size: 1vw;">Lost your password?</a>
+                                <a href="/signup" style="margin-left: 2vw; font-size: 1vw;">Register</a>
+                            </div>
+                        </br>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="footer">
+                <!--EXTENSIONS LINKS: ==> IMPORTANT THINGS TO CONSIDER IN FOOTER
+                    -Terms of Service and Privacy => contract?
+                    -about page => basic goal of this website and what will it accomplish for who
+                    -"contact us" for questions, comments, feedback, etc. =. leads to email-form and email page/pop up
+                    -OR survey => questions comments feedback about use and service of the app
+                    -help page => instructions for how to use the website >>writtern or through video?
+                    -->
+                <div style="margin-left:auto; margin-right: auto; padding-top:10px; width:550px;">
+                    <a class="footertext" href="">Contact us</a>
+                    <a class="footertext" href="">About</a>
+                    <a class="footertext" href="">Terms</a>
+                    <a class="footertext" href="">Privacy</a>
+                    <a class="footertext" href="">Help</a>
+                </div>
+                <p class="footertext" style="margin-left:auto; margin-right: auto; width: 105px;"> &copy; 2014 StationApp</p>
+            </div>
+        </div>
+    </body>
+</html>

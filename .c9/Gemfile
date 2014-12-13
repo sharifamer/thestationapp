@@ -1,0 +1,7 @@
+source 'https://rubygems.org'
+gem 'sinatra'
+gem 'firebase'
+gem 'oauth'
+gem 'pry'
+gem 'twitter'
+gem 'thin'

@@ -1,0 +1,165 @@
+body {
+    Background-color: #D5D5D5;
+    margin: 0px;
+    font-family: Helvetica;
+}
+
+body a {
+    text-decoration: none;
+}
+
+h2 {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 109px;
+}
+
+.sidebar {
+    background-color: #333333;
+    width: 225px;
+    height: 70%;
+    padding-top:.1px;
+    padding-bottom: 225px;
+}
+
+.profstrip {
+    margin-top:40px;
+    background-color: #464646
+    
+}
+
+p {
+    margin: 0px 0px 0px 0px;
+    font-size:21px;
+    color:#f7f7f7;
+}
+
+/*Determines the position of text inside a div*/
+.tabs {
+    margin-top: 6.5px;
+    margin-left: 45px;
+    position: absolute;
+}
+
+.tabpics {
+    width: 0px;
+}
+/*#333333*/
+/*#464646*/
+
+/*Default look of links*/
+/*a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    height: 37px;
+    width: 250px;
+    z-index: 1;
+}
+*/
+
+/*Determines the position of an image in a div*/
+.sidebars {
+    float: left;
+    padding: 0px 10px 0px 10px;
+    margin: 6.5px 0px 2.5px 0px;
+    position: absolute;
+}
+/*For the link overlay in the side tab*/
+.links {
+    margin-left: 0px;
+    float: right;
+}
+
+/*The size and attributes of the div for sidebar links*/
+.divsize {
+    height: 37px;
+    width: 225px;
+    z-index: 1;
+    position: relative;
+}
+
+/*What happens when you hover over a sidebar link div*/
+.divsize:hover {
+    background-color: #464646;
+    transition: .4s;
+}
+
+.divsize:active {
+    background-color: #333333;
+}
+
+.footer {
+    background-color: #2E2E2E;
+    height: 60px;
+    position: relative;
+}
+
+.footertext {
+    color: #464646;
+    padding-left:32px;
+    padding-right:32px;
+    font-size: 12px;
+}
+
+.feed {
+    margin-top: 225px;
+    margin-left: 225px;
+    width: 525px;
+    height: 70%;
+    position: absolute;
+}
+
+.icon {
+    width: 21px;
+    background-color: #ffffff;
+    z-index: 1;
+    position: relative;
+}
+.icon:hover {
+    background-color: #7f7f7f;
+    transition: .4s;
+}
+
+.icon:active {
+    background-color: #e5e5e5;
+}
+
+.tweet_feed {
+    height:auto;
+    overflow:auto;
+    width: 505px;
+    background-color:#FFF;
+    padding:10px;
+    margin-bottom:5px;
+}
+.tweet_feed p {
+    color: #000000; 
+    font-size:14px;
+}
+.insta_feed {
+    height: auto;
+    overflow:auto;
+    width:505px;
+    background-color:#FFF;
+    padding:10px;
+    margin-bottom:5px;
+}
+.mid {
+    height:auto;
+}
+
+.nums {
+    margin-top: -85px;
+    margin-bottom: 20px;
+    position: relative;
+    font-size: 25px;
+}
+
+.assets {
+    margin-top: -85px;
+    margin-bottom: 20px;
+    position: relative;
+}

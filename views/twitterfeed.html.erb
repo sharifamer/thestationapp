@@ -1,0 +1,31 @@
+<div style="margin-top: 45px; margin-bottom: -45px">
+    <div style="display: inline-block; margin-left: 450px;">
+        <p class="nums"><%= @user_info.statuses_count %></p>
+        </br>
+        <p class="assets">Tweets</p>
+    </div>
+    <div style="display: inline-block; margin-left: 550px;">
+        <p class="nums"><%= @user_info.friends_count %></p>
+        </br>
+        <p class="assets">Following</p>
+    </div>
+    <div style="display: inline-block; margin-left: 660px;">
+        <p class="nums"><%= @user_info.followers_count %></p>
+        </br>
+        <p class="assets">Followers</p>
+    </div>
+</div>
+<div class="mid">
+    <% @timeline.each do |tweet| %>
+      
+        <div class="tweet_feed">
+            <img src="<%= tweet.user.profile_image_url %>" style="float:left; display: inline-block;">
+            <p style="padding-left: 12%;"><b><%= tweet.user.name %></b></p>
+            <p style="margin-left: 12%; margin-top: 2%;"><%= tweetStrip(tweet) %></p>
+            <p style="margin-left: 12%; margin-top: 2%;"><% if tweet.media? %>
+            <img src="<%= tweet.media[0].media_url %>:small" style="width: 100%;">
+            <% end %></p>
+            
+        </div>
+    <% end %>
+</div>

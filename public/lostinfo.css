@@ -1,0 +1,104 @@
+body {
+	background-color: #dedede;
+}
+
+.reset { 
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    height: 100px;
+}
+
+input {
+    width: 300px;
+    height: 40px;
+    opacity: 3;
+    border: 1px solid #e6e6e6;
+    background-color: #f7f7f7;
+    font-size: 20px;
+}
+
+.login {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+	width: 100%;
+	height: 35px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	background-color: #dedede;
+    /*width: 101%;
+    height: 105px;
+    background-color: #333333;
+    margin-left: -8px;
+    margin-top: -8px;*/
+}
+
+.send {
+	background-color: transparent;
+	-webkit-border-top-left-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	text-indent: 0;
+	border: 5px solid #0663F8;
+	display: inline-block;
+	color: #ECECEC;
+	font-family :helvetica;
+	font-size: 28px;
+	font-style: normal;
+	height: 50px;
+	/*line-height: 50px; */
+	width: 450px;
+	text-decoration: none;
+	text-align: center;
+	background-color: #0663F8;
+}	
+
+.email {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	text-indent: 0;
+	border: 5px solid #ffffff;
+	display: inline-block;
+	color: #333333;
+	font-family :helvetica;
+	font-size: 24px;
+	font-style: normal;
+	height: 50px;
+	/*line-height: 50px;			defines 'placeholder="Email Address" ' distance from bottom of box //
+									placement of "  " is defined auto when no line-height*/
+	width: 450px;
+	text-decoration: none;
+	text-align: left;
+	padding-left: 5px;
+	margin-top: 10px;
+	background-color: #ffffff;
+}
+
+p {
+	font-family: helvetica;
+}
+
+h2 {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 82px;
+    padding-top: 4px;
+    font-family: helvetica;
+}

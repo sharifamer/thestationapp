@@ -1,0 +1,6 @@
+stop a ruby server 
+(Type CNTRL-C, not CMMND-C)
+
+----
+start a ruby server
+ruby [FILENAME] -p $PORT -0 $IP

@@ -1,0 +1,39 @@
+<% if session[:user] == nil
+redirect to "/login"
+end %>
+<html>
+    <head>
+        <title>TheStationApp</title>
+        <link type="text/css" rel="stylesheet" href="accounts.css"/>
+    </head>
+    <body>
+                    <div style="width:25.6%; padding-top: 10%; margin-left: auto; margin-right: auto;">
+                        <p class="socnet">
+                            Please Choose a Social Network
+                        </p>
+                        <a href="">
+                            <div  class="buttons" style="background-color: #3A5897">
+                                <img src="images/facebook.png" style="display: inline-block; margin-right: -5%; padding: 2.5% 0% 0% 3%; float: left; width:">
+                                <p style="margin: 0px 0px 0px 0px; padding-top: 2.5%;display: inline-block;">
+                                    Facebook
+                                </p>
+                            </div>
+                        </a>
+                        <a href="/twitterfeed">
+                            <div  class="buttons" style="background-color: #54ACED">
+                                <img src="images/twitter.png" style="display: inline-block; margin-right: -5%; padding: 2.5% 0% 0% 3%; float: left;">
+                                <p style="margin: 0px 0px 0px 0px; padding-top: 2.5%;">
+                                    Twitter
+                                </p>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div  class="buttons" style="background-color: #D24736">
+                                <img src="images/facebook.png" style="display: inline-block; margin-right: -5%; padding: 2.5% 0% 0% 3%; float: left;">
+                                <p style="margin: 0px 0px 0px 0px; padding-top: 2.5%;">
+                                    Google+
+                                </p>
+                            </div>
+                        </a>
+    </body>
+</html>

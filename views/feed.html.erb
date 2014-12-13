@@ -1,0 +1,73 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title>Station</title>
+        <link href="feed.css" rel="stylesheet" type="css/javascript">
+    </head>
+<body>
+            <!--<#% if @feed.nil? == false %>
+
+            <#% @feed.each do |thread| %>-->
+
+        <div class="feed" style="border-radius:10px;border-top:10px solid #00000;">
+            
+            <div class="name">
+                
+                    
+                    <b>
+                        <p class="topic">Topic: 
+                            <a href="http://Station-c9-Station.c9.io/forum/<%= thread[0] %>">
+                                <%= thread[1]["topic"] %>
+                            </a>
+                        </p>
+                    </b>
+
+            </div>
+            
+            <div style="padding-bottom:10px">
+
+                <div style="font-size: 14; width:225px; float: left;">
+
+                    <div class="feed1">
+
+                        <p style="margin-top:0px">
+                            <b>
+                                User:
+                            </b>
+                        </p>
+
+                        <p>
+                            <b>
+                                Date posted:
+                            </b>
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <p style="margin-top: 0px"><%= thread[1]["name"] %></p>
+                        <p><%= thread[1]["date"] %></p>
+                    </div>
+                </div>
+                
+                <div class="description">
+
+                    <p>
+                        <b>
+                            Description:
+                        </b>
+                    </p>
+
+                    <p>
+                        <%= thread[1]["description"] %>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <% end %>
+        <% end %>        
+<!-- ERROR WITH TWITTER.RB => COMMENTED ERROR: PLEASE FIX -->
+            
+    </div>
+
+</body>
+</html>

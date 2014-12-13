@@ -1,0 +1,30 @@
+body {
+    Background-color: #D5D5D5;
+    margin: 0px;
+    font-family: Helvetica;
+    background-image: url("images/cityscape.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.socnet {
+    text-align: center;
+    font-size: 1.5vw;
+    
+}
+
+.buttons {
+    width: 27vw;
+    height: 4vw;
+    z-index: 0;
+    margin-top: 5%;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    text-align: center;
+    font-size: 2vw;
+}
+
+a {
+    text-decoration:none;
+    color: white;
+}

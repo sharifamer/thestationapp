@@ -1,0 +1,210 @@
+<% if session[:user] == nil
+redirect to "/login"
+end %>
+<html>
+    <head>
+        <title>The Station App</title>
+            <link href="homepage.css" rel="stylesheet" type="text/css">
+                                                <script type="text/javascript">
+                                                    window.twttr = (function (d, s, id) {
+                                                        var t, js, fjs = d.getElementsByTagName(s)[0];
+                                                        if (d.getElementById(id)) return;
+                                                        js = d.createElement(s); js.id = id; js.src= "https://platform.twitter.com/widgets.js";
+                                                        fjs.parentNode.insertBefore(js, fjs);
+                                                        return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
+                                                    }(document, "script", "twitter-wjs"));
+                                                </script>
+    </head>
+
+    <body>
+        <!-- centered action box-->
+        <div style="width: 1000px; height:100%; margin-left: auto; margin-right: auto; margin-bottom: 5px;">
+            <div style="background-color: #ffffff; width:100%; height: 35px;">
+                <div class="toplinks">
+                    
+                    <a href="" class="links">
+                        <div class="icon">
+                            <img style="float: right; width: 17px; padding: 4px 4px 4px 4px;margin: 4px 4px 4px 4px;" src="images/more.png">
+                        </div>
+                    </a>
+                    <a href="" class="links">
+                        <div class="icon">
+                            <img style="float: right; width: 17px; padding: 4px 4px 4px 4px;margin: 4px 4px 4px 4px;" src="images/search.png">
+                        </div>
+                    </a>
+                    <a href="" class="links">
+                        <div class="icon">
+                            <img style="float: right; width: 17px; padding: 4px 4px 4px 4px;margin: 4px 4px 4px 4px;" src="images/compose.png">
+                        </div>
+                    </a>
+                </div>
+            
+                <h2 style="padding-top:4px">
+                    Station
+                </h2>
+            </div>
+            
+            
+            
+            <!--cover holder-->
+                <img style="width: 775px; height:225px; float: right;" src="<%= idToInfoTwitter(searchTwitter.get[0]["twitter_id"].to_i, "banner_pic") %>">
+                <div style="background-color: #000000; opacity: .6; width: 775px; height: 100px; position: absolute; height: 100px; margin-left: 225px; margin-top: 125px;">
+                </div>
+            
+            <!--center feed-->
+            
+                <div class="feed">
+                    <!--needs edit-->
+                    <div class="table">
+                        
+                        <% if session[:user] != nil %>
+                        
+                           <%= yield %>
+                        
+              
+                
+                    <% end %>
+                 </div>
+                </div>
+                
+                
+            <!--right side bar-->
+                <div style="width:250px; height:70%; background-color: #333333; float: right; margin-top: 0px;">
+                    <div>
+                        <img src="images/scheduledpost.png">
+                        <p>
+                            Scheduled Post
+                        </p>
+                        <p>
+                            [date]
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            [data]
+                        </p>
+                        <p>
+                            [assigned date]
+                        </p>
+                    </div>
+                </div>
+            
+            
+        <!--left side bar-->
+        
+            <div class="sidebar">
+                <div class="profstrip">
+                    <a href="/twitterprofile"><div>
+                        <img style="float: left; width: 60px; position: absolute; margin: 10px 2px 10px 10px;  border:2px solid #FFF; border-radius: 100%;" src="<%= idToInfoTwitter(searchTwitter.get[0]["twitter_id"].to_i, "pic") %>">
+                        
+                        <div style="margin-left: 65px; width:150px; padding: 10px 0px 10px 10px; background-color: #464646;">
+                             <p  style="margin: 0px; color: #ffffff; padding-top: 7.5px; font-size: 21px;">
+                                  <%= idToInfoTwitter(searchTwitter.get[0]["twitter_id"].to_i, "name") %>
+                            </p>
+                            <p style="margin: 0px; color: #ffffff; padding-bottom: 12.5px; font-size:14px;">
+                                @<%= idToInfoTwitter(searchTwitter.get[0]["twitter_id"].to_i, "screen_name") %>
+                            </p>
+                        </div>
+                    </div></a>
+                </div>
+            
+            
+            
+            <!--left side bar tabs-->
+            
+                <div style="margin-top:55px;">
+                                <a href="" class="links">
+                                    <div class="divsize">
+                                        <img class="sidebars" src="images/dashboard.png">
+                                        <p class="tabs">Dashboard</p>
+                                    </div>
+                                </a>
+                                
+                                <a href="" class="links">
+                                    <div class="divsize">
+                                        <img class="sidebars" src="images/statistics.png">
+                                        <p class="tabs">Statistics</p>
+                                    </div>
+                                </a>
+                                
+                                <a href="" class="links">
+                                    <div class="divsize">
+                                        <img class="sidebars" src="images/scheduledpost.png">
+                                        <p class="tabs">Scheduled Post</p>
+                                    </div>
+                                </a>
+                                
+                                <a href="" class="links">
+                                    <div class="divsize">
+                                        <img class="sidebars" src="images/activity.png">
+                                        <p class="tabs">Activity</p>
+                                    </div>
+                                </a>
+                        
+                        
+                        </br>
+                        
+                        
+                        
+                        
+                        
+                        <p style="color:#464646; margin-left: 45px; position: absolute; margin-top: 10%;">Accounts</p>
+                        
+                        <a href="" class="links" style=" margin-top: 15%;">
+                            <div class="divsize">
+                                <img class="sidebars" src="images/facebook.png">
+                                <p class="tabs">[Fb account]</p>
+                            </div>
+                        </a>
+                        
+                        <a href="" class="links">
+                            <div class="divsize">
+                                <img class="sidebars" src="images/facebook.png">
+                                <p class="tabs">[Fb account]</p>
+                            </div>
+                        </a>
+                        
+                        <a href="/instagramfeed" class="links">
+                            <div class="divsize">
+                                <img class="sidebars" src="images/instagram.png">
+                                <p class="tabs">
+                                    <% if instagramExist %>
+                                        <%= idToInfoInstagram(searchInsta.get[0]["instagram_id"].to_i, "screen_name") %>
+                                    <% else %>
+                                        Add Instagram
+                                    <% end %>
+                                </p>
+                            </div>
+                        </a>
+                        
+                        <a href="/twitterfeed" class="links">
+                            <div class="divsize">
+                                <img class="sidebars" src="images/twitter.png">
+                                <p class="tabs">
+                                    <% if twitterExist %>
+                                        @<%= idToInfoTwitter(searchTwitter.get[0]["twitter_id"].to_i, "screen_name") %>
+                                    <% else %>
+                                        Add Twitter
+                                    <% end %>        
+                                </p>
+                            </div>
+                        </a>
+                        <!-- IMPORTANT:
+                            IF YOU WANT TO CREATE ANOTHER LINK, YOU MUST USE THIS FORMAT:
+                                <a href="" class="links">
+                                    <div class="divsize">
+                                        <img class="sidebars" src="twitter.png">
+                                        <p class="tabs">[Tr account]</p>
+                                    </div>
+                                </a>
+                        -->
+
+                </div>
+            </div>
+        
+        </div>
+
+
+    </body>
+
+</html>

@@ -1,0 +1,33 @@
+<div style="margin-top: 45px; margin-bottom: -45px">
+    <div style="display: inline-block; margin-left: 450px;">
+        <p class="nums"><%= @user_info.counts.media %></p>
+        </br>
+        <p class="assets">Posts</p>
+    </div>
+    <div style="display: inline-block; margin-left: 550px;">
+        <p class="nums"><%= @user_info.counts.follows %></p>
+        </br>
+        <p class="assets">Following</p>
+    </div>
+    <div style="display: inline-block; margin-left: 660px;">
+        <p class="nums"><%= @user_info.counts.followed_by %></p>
+        </br>
+        <p class="assets">Followers</p>
+    </div>
+</div>
+<div class="mid">
+    <% for media_item in @feed %>
+    <div class="insta_feed">
+        <img style="width:250px; float:left" src='<%= media_item.images.standard_resolution.url %>'>
+        <b>Posted by <%= media_item.user.username %></b></br>
+        <% 
+        if media_item.caption
+          caption = media_item.caption.text
+        else
+          caption = ""
+        end
+        %>
+        <%= caption %>
+    </div>
+    <% end %>
+</div>
